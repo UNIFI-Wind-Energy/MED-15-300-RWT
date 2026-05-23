@@ -1,0 +1,118 @@
+----------------------------------------QBlade Blade Definition File------------------------------------------------
+Generated with : QBlade CE v2.0.9.5_beta windows
+Archive Format: 310039
+Time : 17:54:27
+Date : 23.05.2026
+
+----------------------------------------Object Name-----------------------------------------------------------------
+MED-15-300-RWT_v1.0.0_BLADE                        OBJECTNAME         - the name of the blade object
+
+----------------------------------------Parameters------------------------------------------------------------------
+HAWT                                               ROTORTYPE          - the rotor type
+false                                              INVERTEDFOILS      - invert the airfoils? (only VAWT) [bool]
+3                                                  NUMBLADES          - number of blades
+
+----------------------------------------Blade Data------------------------------------------------------------------
+POS_[m]             CHORD_[m]           TWIST_[deg]         OFFSET_X_[m]        OFFSET_Y_[m]        P_AXIS [-]          POLAR_FILE          
+4.00000             5.80000             11.46               0.00000             0.00000             0.50500             Polars/DLC1.1_0_MED-15-300-RWT_v1.0.0_15_airfoil_coordinates_00.dat_MultiRePolar.plr
+5.50000             5.80000             11.46               0.00000             -0.00000            0.49774             Polars/DLC1.1_0_MED-15-300-RWT_v1.0.0_15_airfoil_coordinates_01.dat_MultiRePolar.plr
+7.00000             5.80000             11.46               0.00000             -0.00000            0.49015             Polars/DLC1.1_0_MED-15-300-RWT_v1.0.0_15_airfoil_coordinates_02.dat_MultiRePolar.plr
+8.50000             5.85380             11.45               0.00000             -0.00001            0.48220             Polars/DLC1.1_0_MED-15-300-RWT_v1.0.0_15_airfoil_coordinates_03.dat_MultiRePolar.plr
+10.00000            5.92802             11.45               0.00000             -0.00002            0.47390             Polars/DLC1.1_0_MED-15-300-RWT_v1.0.0_15_airfoil_coordinates_04.dat_MultiRePolar.plr
+11.50000            6.00000             11.44               0.00000             -0.00005            0.46497             Polars/DLC1.1_0_MED-15-300-RWT_v1.0.0_15_airfoil_coordinates_05.dat_MultiRePolar.plr
+13.00000            6.10320             11.44               0.00000             -0.00010            0.45536             Polars/DLC1.1_0_MED-15-300-RWT_v1.0.0_15_airfoil_coordinates_06.dat_MultiRePolar.plr
+14.50000            6.25071             11.43               0.00000             -0.00017            0.44543             Polars/DLC1.1_0_MED-15-300-RWT_v1.0.0_15_airfoil_coordinates_07.dat_MultiRePolar.plr
+16.00000            6.41659             11.42               0.00000             -0.00029            0.43550             Polars/DLC1.1_0_MED-15-300-RWT_v1.0.0_15_airfoil_coordinates_08.dat_MultiRePolar.plr
+17.50000            6.57491             11.41               0.00000             -0.00047            0.42591             Polars/DLC1.1_0_MED-15-300-RWT_v1.0.0_15_airfoil_coordinates_09.dat_MultiRePolar.plr
+19.00000            6.69973             11.37               0.00000             -0.00071            0.41700             Polars/DLC1.1_0_MED-15-300-RWT_v1.0.0_15_airfoil_coordinates_10.dat_MultiRePolar.plr
+20.50000            6.79639             11.26               0.00000             -0.00101            0.40838             Polars/DLC1.1_0_MED-15-300-RWT_v1.0.0_15_airfoil_coordinates_11.dat_MultiRePolar.plr
+22.00000            6.88582             11.09               0.00000             -0.00146            0.39954             Polars/DLC1.1_0_MED-15-300-RWT_v1.0.0_15_airfoil_coordinates_12.dat_MultiRePolar.plr
+23.50000            6.96548             10.87               0.00000             -0.00202            0.39067             Polars/DLC1.1_0_MED-15-300-RWT_v1.0.0_15_airfoil_coordinates_13.dat_MultiRePolar.plr
+25.00000            7.03280             10.62               0.00000             -0.00268            0.38193             Polars/DLC1.1_0_MED-15-300-RWT_v1.0.0_15_airfoil_coordinates_14.dat_MultiRePolar.plr
+26.50000            7.08526             10.34               0.00000             -0.00353            0.37350             Polars/DLC1.1_0_MED-15-300-RWT_v1.0.0_15_airfoil_coordinates_15.dat_MultiRePolar.plr
+28.00000            7.12962             10.05               0.00000             -0.00461            0.36555             Polars/DLC1.1_0_MED-15-300-RWT_v1.0.0_15_airfoil_coordinates_16.dat_MultiRePolar.plr
+29.50000            7.17153             9.75                0.00000             -0.00586            0.35825             Polars/DLC1.1_0_MED-15-300-RWT_v1.0.0_15_airfoil_coordinates_17.dat_MultiRePolar.plr
+31.00000            7.20673             9.45                0.00000             -0.00733            0.35178             Polars/DLC1.1_0_MED-15-300-RWT_v1.0.0_15_airfoil_coordinates_18.dat_MultiRePolar.plr
+32.50000            7.23097             9.14                0.00000             -0.00913            0.34630             Polars/DLC1.1_0_MED-15-300-RWT_v1.0.0_15_airfoil_coordinates_19.dat_MultiRePolar.plr
+34.00000            7.24000             8.79                0.00000             -0.01123            0.34200             Polars/DLC1.1_0_MED-15-300-RWT_v1.0.0_15_airfoil_coordinates_20.dat_MultiRePolar.plr
+35.50000            7.23439             8.39                0.00000             -0.01359            0.33843             Polars/DLC1.1_0_MED-15-300-RWT_v1.0.0_15_airfoil_coordinates_21.dat_MultiRePolar.plr
+37.00000            7.21902             7.97                0.00000             -0.01638            0.33502             Polars/DLC1.1_0_MED-15-300-RWT_v1.0.0_15_airfoil_coordinates_22.dat_MultiRePolar.plr
+38.50000            7.19606             7.52                0.00000             -0.01961            0.33179             Polars/DLC1.1_0_MED-15-300-RWT_v1.0.0_15_airfoil_coordinates_23.dat_MultiRePolar.plr
+40.00000            7.16767             7.07                0.00000             -0.02322            0.32871             Polars/DLC1.1_0_MED-15-300-RWT_v1.0.0_15_airfoil_coordinates_24.dat_MultiRePolar.plr
+41.50000            7.13603             6.62                0.00000             -0.02730            0.32578             Polars/DLC1.1_0_MED-15-300-RWT_v1.0.0_15_airfoil_coordinates_25.dat_MultiRePolar.plr
+43.00000            7.09114             6.18                0.00000             -0.03199            0.32301             Polars/DLC1.1_0_MED-15-300-RWT_v1.0.0_15_airfoil_coordinates_26.dat_MultiRePolar.plr
+44.50000            7.02543             5.77                0.00000             -0.03724            0.32038             Polars/DLC1.1_0_MED-15-300-RWT_v1.0.0_15_airfoil_coordinates_27.dat_MultiRePolar.plr
+46.00000            6.94475             5.37                0.00000             -0.04300            0.31789             Polars/DLC1.1_0_MED-15-300-RWT_v1.0.0_15_airfoil_coordinates_28.dat_MultiRePolar.plr
+47.50000            6.85493             4.96                0.00000             -0.04951            0.31554             Polars/DLC1.1_0_MED-15-300-RWT_v1.0.0_15_airfoil_coordinates_29.dat_MultiRePolar.plr
+49.00000            6.76179             4.54                0.00000             -0.05676            0.31333             Polars/DLC1.1_0_MED-15-300-RWT_v1.0.0_15_airfoil_coordinates_30.dat_MultiRePolar.plr
+50.50000            6.65667             4.12                0.00000             -0.06467            0.31123             Polars/DLC1.1_0_MED-15-300-RWT_v1.0.0_15_airfoil_coordinates_31.dat_MultiRePolar.plr
+52.00000            6.53341             3.71                0.00000             -0.07338            0.30927             Polars/DLC1.1_0_MED-15-300-RWT_v1.0.0_15_airfoil_coordinates_32.dat_MultiRePolar.plr
+53.50000            6.40157             3.32                0.00000             -0.08304            0.30742             Polars/DLC1.1_0_MED-15-300-RWT_v1.0.0_15_airfoil_coordinates_33.dat_MultiRePolar.plr
+55.00000            6.27073             2.97                0.00000             -0.09358            0.30568             Polars/DLC1.1_0_MED-15-300-RWT_v1.0.0_15_airfoil_coordinates_34.dat_MultiRePolar.plr
+56.50000            6.15046             2.66                0.00000             -0.10499            0.30406             Polars/DLC1.1_0_MED-15-300-RWT_v1.0.0_15_airfoil_coordinates_35.dat_MultiRePolar.plr
+58.00000            6.04085             2.41                0.00000             -0.11756            0.30253             Polars/DLC1.1_0_MED-15-300-RWT_v1.0.0_15_airfoil_coordinates_36.dat_MultiRePolar.plr
+59.50000            5.93520             2.21                0.00000             -0.13124            0.30111             Polars/DLC1.1_0_MED-15-300-RWT_v1.0.0_15_airfoil_coordinates_37.dat_MultiRePolar.plr
+61.00000            5.83286             2.04                0.00000             -0.14595            0.29979             Polars/DLC1.1_0_MED-15-300-RWT_v1.0.0_15_airfoil_coordinates_38.dat_MultiRePolar.plr
+62.50000            5.73318             1.89                0.00000             -0.16190            0.29855             Polars/DLC1.1_0_MED-15-300-RWT_v1.0.0_15_airfoil_coordinates_39.dat_MultiRePolar.plr
+64.00000            5.63550             1.75                0.00000             -0.17924            0.29740             Polars/DLC1.1_0_MED-15-300-RWT_v1.0.0_15_airfoil_coordinates_40.dat_MultiRePolar.plr
+65.50000            5.53914             1.63                0.00000             -0.19786            0.29628             Polars/DLC1.1_0_MED-15-300-RWT_v1.0.0_15_airfoil_coordinates_41.dat_MultiRePolar.plr
+67.00000            5.44440             1.51                0.00000             -0.21778            0.29516             Polars/DLC1.1_0_MED-15-300-RWT_v1.0.0_15_airfoil_coordinates_42.dat_MultiRePolar.plr
+68.50000            5.35211             1.39                0.00000             -0.23932            0.29406             Polars/DLC1.1_0_MED-15-300-RWT_v1.0.0_15_airfoil_coordinates_43.dat_MultiRePolar.plr
+70.00000            5.26308             1.28                0.00000             -0.26242            0.29302             Polars/DLC1.1_0_MED-15-300-RWT_v1.0.0_15_airfoil_coordinates_44.dat_MultiRePolar.plr
+71.50000            5.17815             1.16                0.00000             -0.28700            0.29207             Polars/DLC1.1_0_MED-15-300-RWT_v1.0.0_15_airfoil_coordinates_45.dat_MultiRePolar.plr
+73.00000            5.09761             1.04                0.00000             -0.31335            0.29122             Polars/DLC1.1_0_MED-15-300-RWT_v1.0.0_15_airfoil_coordinates_46.dat_MultiRePolar.plr
+74.50000            5.02059             0.92                0.00000             -0.34159            0.29051             Polars/DLC1.1_0_MED-15-300-RWT_v1.0.0_15_airfoil_coordinates_47.dat_MultiRePolar.plr
+76.00000            4.94619             0.81                0.00000             -0.37160            0.28997             Polars/DLC1.1_0_MED-15-300-RWT_v1.0.0_15_airfoil_coordinates_48.dat_MultiRePolar.plr
+77.50000            4.87351             0.69                0.00000             -0.40345            0.28962             Polars/DLC1.1_0_MED-15-300-RWT_v1.0.0_15_airfoil_coordinates_49.dat_MultiRePolar.plr
+79.00000            4.80164             0.58                0.00000             -0.43751            0.28950             Polars/DLC1.1_0_MED-15-300-RWT_v1.0.0_15_airfoil_coordinates_50.dat_MultiRePolar.plr
+80.50000            4.73100             0.47                0.00000             -0.47367            0.28956             Polars/DLC1.1_0_MED-15-300-RWT_v1.0.0_15_airfoil_coordinates_51.dat_MultiRePolar.plr
+82.00000            4.66214             0.36                0.00000             -0.51181            0.28973             Polars/DLC1.1_0_MED-15-300-RWT_v1.0.0_15_airfoil_coordinates_52.dat_MultiRePolar.plr
+83.50000            4.59432             0.24                0.00000             -0.55234            0.29000             Polars/DLC1.1_0_MED-15-300-RWT_v1.0.0_15_airfoil_coordinates_53.dat_MultiRePolar.plr
+85.00000            4.52683             0.12                0.00000             -0.59532            0.29035             Polars/DLC1.1_0_MED-15-300-RWT_v1.0.0_15_airfoil_coordinates_54.dat_MultiRePolar.plr
+86.50000            4.45895             -0.00               0.00000             -0.64061            0.29078             Polars/DLC1.1_0_MED-15-300-RWT_v1.0.0_15_airfoil_coordinates_55.dat_MultiRePolar.plr
+88.00000            4.39043             -0.13               0.00000             -0.68837            0.29126             Polars/DLC1.1_0_MED-15-300-RWT_v1.0.0_15_airfoil_coordinates_56.dat_MultiRePolar.plr
+89.50000            4.32175             -0.26               0.00000             -0.73895            0.29178             Polars/DLC1.1_0_MED-15-300-RWT_v1.0.0_15_airfoil_coordinates_57.dat_MultiRePolar.plr
+91.00000            4.25328             -0.40               0.00000             -0.79223            0.29234             Polars/DLC1.1_0_MED-15-300-RWT_v1.0.0_15_airfoil_coordinates_58.dat_MultiRePolar.plr
+92.50000            4.18541             -0.54               0.00000             -0.84813            0.29292             Polars/DLC1.1_0_MED-15-300-RWT_v1.0.0_15_airfoil_coordinates_59.dat_MultiRePolar.plr
+94.00000            4.11849             -0.68               0.00000             -0.90713            0.29350             Polars/DLC1.1_0_MED-15-300-RWT_v1.0.0_15_airfoil_coordinates_60.dat_MultiRePolar.plr
+95.50000            4.05246             -0.82               0.00000             -0.96924            0.29417             Polars/DLC1.1_0_MED-15-300-RWT_v1.0.0_15_airfoil_coordinates_61.dat_MultiRePolar.plr
+97.00000            3.98702             -0.96               0.00000             -1.03432            0.29500             Polars/DLC1.1_0_MED-15-300-RWT_v1.0.0_15_airfoil_coordinates_62.dat_MultiRePolar.plr
+98.50000            3.92231             -1.10               0.00000             -1.10259            0.29596             Polars/DLC1.1_0_MED-15-300-RWT_v1.0.0_15_airfoil_coordinates_63.dat_MultiRePolar.plr
+100.00000           3.85842             -1.24               0.00000             -1.17442            0.29702             Polars/DLC1.1_0_MED-15-300-RWT_v1.0.0_15_airfoil_coordinates_64.dat_MultiRePolar.plr
+101.50000           3.79547             -1.37               0.00000             -1.24963            0.29816             Polars/DLC1.1_0_MED-15-300-RWT_v1.0.0_15_airfoil_coordinates_65.dat_MultiRePolar.plr
+103.00000           3.73372             -1.52               0.00000             -1.32816            0.29935             Polars/DLC1.1_0_MED-15-300-RWT_v1.0.0_15_airfoil_coordinates_66.dat_MultiRePolar.plr
+104.50000           3.67308             -1.66               0.00000             -1.41058            0.30055             Polars/DLC1.1_0_MED-15-300-RWT_v1.0.0_15_airfoil_coordinates_67.dat_MultiRePolar.plr
+106.00000           3.61310             -1.80               0.00000             -1.49683            0.30175             Polars/DLC1.1_0_MED-15-300-RWT_v1.0.0_15_airfoil_coordinates_68.dat_MultiRePolar.plr
+107.50000           3.55333             -1.94               0.00000             -1.58674            0.30355             Polars/DLC1.1_0_MED-15-300-RWT_v1.0.0_15_airfoil_coordinates_69.dat_MultiRePolar.plr
+109.00000           3.49335             -2.08               0.00000             -1.68067            0.30528             Polars/DLC1.1_0_MED-15-300-RWT_v1.0.0_15_airfoil_coordinates_70.dat_MultiRePolar.plr
+110.50000           3.43316             -2.22               0.00000             -1.77890            0.30697             Polars/DLC1.1_0_MED-15-300-RWT_v1.0.0_15_airfoil_coordinates_71.dat_MultiRePolar.plr
+112.00000           3.37307             -2.36               0.00000             -1.88127            0.30867             Polars/DLC1.1_0_MED-15-300-RWT_v1.0.0_15_airfoil_coordinates_72.dat_MultiRePolar.plr
+113.50000           3.31304             -2.50               0.00000             -1.98778            0.31037             Polars/DLC1.1_0_MED-15-300-RWT_v1.0.0_15_airfoil_coordinates_73.dat_MultiRePolar.plr
+115.00000           3.25303             -2.64               0.00000             -2.09903            0.31206             Polars/DLC1.1_0_MED-15-300-RWT_v1.0.0_15_airfoil_coordinates_74.dat_MultiRePolar.plr
+116.50000           3.19301             -2.78               0.00000             -2.21491            0.31376             Polars/DLC1.1_0_MED-15-300-RWT_v1.0.0_15_airfoil_coordinates_75.dat_MultiRePolar.plr
+118.00000           3.13238             -2.92               0.00000             -2.33527            0.31546             Polars/DLC1.1_0_MED-15-300-RWT_v1.0.0_15_airfoil_coordinates_76.dat_MultiRePolar.plr
+119.50000           3.07117             -3.06               0.00000             -2.46059            0.31716             Polars/DLC1.1_0_MED-15-300-RWT_v1.0.0_15_airfoil_coordinates_77.dat_MultiRePolar.plr
+121.00000           3.01027             -3.20               0.00000             -2.59108            0.31884             Polars/DLC1.1_0_MED-15-300-RWT_v1.0.0_15_airfoil_coordinates_78.dat_MultiRePolar.plr
+122.50000           2.95056             -3.34               0.00000             -2.72655            0.32052             Polars/DLC1.1_0_MED-15-300-RWT_v1.0.0_15_airfoil_coordinates_79.dat_MultiRePolar.plr
+124.00000           2.89293             -3.48               0.00000             -2.86708            0.32219             Polars/DLC1.1_0_MED-15-300-RWT_v1.0.0_15_airfoil_coordinates_80.dat_MultiRePolar.plr
+125.50000           2.83767             -3.62               0.00000             -3.01328            0.32388             Polars/DLC1.1_0_MED-15-300-RWT_v1.0.0_15_airfoil_coordinates_81.dat_MultiRePolar.plr
+127.00000           2.78411             -3.76               0.00000             -3.16500            0.32561             Polars/DLC1.1_0_MED-15-300-RWT_v1.0.0_15_airfoil_coordinates_82.dat_MultiRePolar.plr
+128.50000           2.73168             -3.90               0.00000             -3.32207            0.32736             Polars/DLC1.1_0_MED-15-300-RWT_v1.0.0_15_airfoil_coordinates_83.dat_MultiRePolar.plr
+130.00000           2.67978             -4.04               0.00000             -3.48509            0.32911             Polars/DLC1.1_0_MED-15-300-RWT_v1.0.0_15_airfoil_coordinates_84.dat_MultiRePolar.plr
+131.50000           2.62783             -4.17               0.00000             -3.65419            0.33084             Polars/DLC1.1_0_MED-15-300-RWT_v1.0.0_15_airfoil_coordinates_85.dat_MultiRePolar.plr
+133.00000           2.57725             -4.31               0.00000             -3.82917            0.33253             Polars/DLC1.1_0_MED-15-300-RWT_v1.0.0_15_airfoil_coordinates_86.dat_MultiRePolar.plr
+134.50000           2.52841             -4.45               0.00000             -4.01020            0.33418             Polars/DLC1.1_0_MED-15-300-RWT_v1.0.0_15_airfoil_coordinates_87.dat_MultiRePolar.plr
+136.00000           2.47920             -4.59               0.00000             -4.19790            0.33574             Polars/DLC1.1_0_MED-15-300-RWT_v1.0.0_15_airfoil_coordinates_88.dat_MultiRePolar.plr
+137.50000           2.42751             -4.72               0.00000             -4.39207            0.33722             Polars/DLC1.1_0_MED-15-300-RWT_v1.0.0_15_airfoil_coordinates_89.dat_MultiRePolar.plr
+139.00000           2.37121             -4.86               0.00000             -4.59257            0.33859             Polars/DLC1.1_0_MED-15-300-RWT_v1.0.0_15_airfoil_coordinates_90.dat_MultiRePolar.plr
+140.50000           2.31181             -4.99               0.00000             -4.80007            0.33989             Polars/DLC1.1_0_MED-15-300-RWT_v1.0.0_15_airfoil_coordinates_91.dat_MultiRePolar.plr
+142.00000           2.25012             -5.12               0.00000             -5.01470            0.34116             Polars/DLC1.1_0_MED-15-300-RWT_v1.0.0_15_airfoil_coordinates_92.dat_MultiRePolar.plr
+143.50000           2.18302             -5.25               0.00000             -5.23628            0.34242             Polars/DLC1.1_0_MED-15-300-RWT_v1.0.0_15_airfoil_coordinates_93.dat_MultiRePolar.plr
+145.00000           2.10741             -5.38               0.00000             -5.46528            0.34364             Polars/DLC1.1_0_MED-15-300-RWT_v1.0.0_15_airfoil_coordinates_94.dat_MultiRePolar.plr
+146.50000           2.02015             -5.51               0.00000             -5.70219            0.34482             Polars/DLC1.1_0_MED-15-300-RWT_v1.0.0_15_airfoil_coordinates_95.dat_MultiRePolar.plr
+148.00000           1.90000             -5.63               0.00000             -5.94654            0.34596             Polars/DLC1.1_0_MED-15-300-RWT_v1.0.0_15_airfoil_coordinates_96.dat_MultiRePolar.plr
+149.50000           1.68289             -5.76               0.00000             -6.19802            0.34705             Polars/DLC1.1_0_MED-15-300-RWT_v1.0.0_15_airfoil_coordinates_97.dat_MultiRePolar.plr
+151.00000           1.33340             -5.88               0.00000             -6.45753            0.34809             Polars/DLC1.1_0_MED-15-300-RWT_v1.0.0_15_airfoil_coordinates_98.dat_MultiRePolar.plr
+152.50000           0.89221             -6.01               0.00000             -6.72497            0.34908             Polars/DLC1.1_0_MED-15-300-RWT_v1.0.0_15_airfoil_coordinates_99.dat_MultiRePolar.plr
+154.00000           0.40000             -6.13               0.00000             -7.00000            0.35000             Polars/DLC1.1_0_MED-15-300-RWT_v1.0.0_15_airfoil_coordinates_100.dat_MultiRePolar.plr
+
