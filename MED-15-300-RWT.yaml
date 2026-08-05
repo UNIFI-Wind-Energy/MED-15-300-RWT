@@ -1717,7 +1717,7 @@ materials:
 control:
     supervisory: {Vin: 3.0, Vout: 25.0, maxTS: 100.0}
     pitch: {PC_zeta: 1.0, PC_omega: 0.2, ps_percent: 0.8, max_pitch: 1.57, max_pitch_rate: 0.03490658503988659, min_pitch: 0.0, fix_pitch_regI12: false}
-    torque: {control_type: tsr_tracking, tsr: 10.15, max_torque_rate: 4500000.0, VS_minspd: 0.19331, VS_refspd: 0.64, VS_maxspd: 0.64, VS_zeta: 1.0, VS_omega: 0.2}
+    torque: {control_type: tsr_tracking, tsr: 10.15, max_torque_rate: 4500000.0, VS_minspd: 0.19331, VS_refspd: 0.6074, VS_maxspd: 0.6074, VS_zeta: 1.0, VS_omega: 0.2}
     setpoint_smooth: {ss_vsgain: 1, ss_pcgain: 0.001}
     shutdown: {limit_type: gen_speed, limit_value: 2.0}
 environment: {air_density: 1.225, air_dyn_viscosity: 1.81e-05, weib_shape_parameter: 2.0, air_speed_sound: 340.0, shear_exp: 0.0, water_density: 1025.0, water_dyn_viscosity: 0.0013351, soil_shear_modulus: 140000000.0, soil_poisson: 0.4, water_depth: 200.0, significant_wave_height: 0.85, significant_wave_period: 5.55, gravity: 9.80665, air_pressure: 103500.0, air_vapor_pressure: 1700.0, V_mean: 0.0}
