@@ -1,0 +1,54 @@
+------- ELASTODYN TOWER INPUT FILE -------------------------------------
+Generated with OpenFAST_IO
+---------------------- TOWER PARAMETERS ----------------------------------------
+13                     NTwInpSt    - Number of input stations to specify tower geometry
+1.0                    TwrFADmp(1) - Tower 1st fore-aft mode structural damping ratio (%)
+1.0                    TwrFADmp(2) - Tower 2nd fore-aft mode structural damping ratio (%)
+1.0                    TwrSSDmp(1) - Tower 1st side-to-side mode structural damping ratio (%)
+1.0                    TwrSSDmp(2) - Tower 2nd side-to-side mode structural damping ratio (%)
+---------------------- TOWER ADJUSTMUNT FACTORS --------------------------------
+1.0                    FAStTunr(1) - Tower fore-aft modal stiffness tuner, 1st mode (-)
+1.0                    FAStTunr(2) - Tower fore-aft modal stiffness tuner, 2nd mode (-)
+1.0                    SSStTunr(1) - Tower side-to-side stiffness tuner, 1st mode (-)
+1.0                    SSStTunr(2) - Tower side-to-side stiffness tuner, 2nd mode (-)
+1.0                    AdjTwMa     - Factor to adjust tower mass density (-)
+1.0                    AdjFASt     - Factor to adjust tower fore-aft stiffness (-)
+1.0                    AdjSSSt     - Factor to adjust tower side-to-side stiffness (-)
+---------------------- DISTRIBUTED TOWER PROPERTIES ----------------------------
+  HtFract       TMassDen         TwFAStif       TwSSStif
+   (-)           (kg/m)           (Nm^2)         (Nm^2)
+ 0.000000000000000e+00  2.693091599981608e+04  9.511678391330605e+12  9.511678391330605e+12
+ 8.598281665237724e-02  2.476714143940838e+04  8.737850204153696e+12  8.737850204153696e+12
+ 1.719656333370153e-01  2.212219709606913e+04  7.817914468365551e+12  7.817914468365551e+12
+ 2.579484500216532e-01  1.962455266947037e+04  6.733475460567736e+12  6.733475460567736e+12
+ 3.439312666740305e-01  1.842427438585884e+04  6.087971867596260e+12  6.087971867596260e+12
+ 4.299140833264078e-01  1.804905215354249e+04  5.842473590396768e+12  5.842473590396768e+12
+ 5.158968998497423e-01  1.619517353137033e+04  4.703802948618271e+12  4.703802948618271e+12
+ 6.018797164053376e-01  1.427912028881129e+04  3.656522480379271e+12  3.656522480379271e+12
+ 6.878625331222361e-01  1.169920629678165e+04  2.454557644553634e+12  2.454557644553634e+12
+ 7.738453498391349e-01  9.022102883961468e+03  1.458033026957663e+12  1.458033026957663e+12
+ 8.598281665560336e-01  8.239502238681594e+03  1.217722325126959e+12  1.217722325126959e+12
+ 9.458109832729323e-01  8.117645636446639e+03  1.181909956849193e+12  1.181909956849193e+12
+ 1.000000000000000e+00  8.071290891723968e+03  1.168375352497117e+12  1.168375352497117e+12
+---------------------- TOWER FORE-AFT MODE SHAPES ------------------------------
+1.0645       TwFAM1Sh(2) - Mode 1, coefficient of x^2 term
+-0.16467     TwFAM1Sh(3) -       , coefficient of x^3 term
+-0.79788     TwFAM1Sh(4) -       , coefficient of x^4 term
+1.5866       TwFAM1Sh(5) -       , coefficient of x^5 term
+-0.68855     TwFAM1Sh(6) -       , coefficient of x^6 term
+7.6172       TwFAM2Sh(2) - Mode 2, coefficient of x^2 term
+-11.336      TwFAM2Sh(3) -       , coefficient of x^3 term
+20.002       TwFAM2Sh(4) -       , coefficient of x^4 term
+-21.064      TwFAM2Sh(5) -       , coefficient of x^5 term
+5.7808       TwFAM2Sh(6) -       , coefficient of x^6 term
+---------------------- TOWER SIDE-TO-SIDE MODE SHAPES --------------------------
+1.0387       TwSSM1Sh(2) - Mode 1, coefficient of x^2 term
+-0.16077     TwSSM1Sh(3) -       , coefficient of x^3 term
+-0.79993     TwSSM1Sh(4) -       , coefficient of x^4 term
+1.584        TwSSM1Sh(5) -       , coefficient of x^5 term
+-0.66199     TwSSM1Sh(6) -       , coefficient of x^6 term
+5.1798       TwSSM2Sh(2) - Mode 2, coefficient of x^2 term
+-6.8014      TwSSM2Sh(3) -       , coefficient of x^3 term
+11.436       TwSSM2Sh(4) -       , coefficient of x^4 term
+-11.106      TwSSM2Sh(5) -       , coefficient of x^5 term
+2.2916       TwSSM2Sh(6) -       , coefficient of x^6 term
