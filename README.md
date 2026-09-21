@@ -22,10 +22,10 @@ The MED-15-300-RWT is a low-specific-power reference wind turbine developed for 
 | Drivetrain | Direct drive |
 | Platform concept | 4-column semi-submersible |
 | Mooring concept | 3-line catenary |
-| Blade mass | 94.206 t |
-| RNA mass | 1237.538 t |
+| Blade mass | 92.675 t |
+| RNA mass | 1232.945 t |
 | Generator mass | 372.664 t |
-| Tower mass | 2659.562 t |
+| Tower mass | 2661.301 t |
 | Semi-submersible structural mass | 5864.110 t |
 
 
