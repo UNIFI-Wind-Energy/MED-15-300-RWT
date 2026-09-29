@@ -148,16 +148,16 @@ ID         JntID      Jnt2ID     TP         Ground     Spring     DoF_tX     DoF
 
 SUBMEMBERS
 MemID   Jnt1ID  Jnt2ID  ElmID   ElmRot  HyCoID  IsBuoy  MaGrID  FldArea ElmDsc Name (optional)
-1       1       2       1       0       1       1       0       0       50      main_column
-2       3       4       2       0       1       1       0       0       50      column1
-3       5       6       3       0       1       1       0       0       50      column2
-4       7       8       4       0       1       1       0       0       50      column3
-5       9       10      5       0       1       1       0       0       10      Y_pontoon_upper1
-6       11      12      6       0       1       1       0       0       10      Y_pontoon_upper2
-7       13      14      7       0       1       1       0       0       10      Y_pontoon_upper3
-8       15      16      8       0       5       1       0       0       100     Y_pontoon_lower1
-9       17      18      9       0       5       1       0       0       100     Y_pontoon_lower2
-10      19      20      10      0       5       1       0       0       100     Y_pontoon_lower3
+1       1       2       1       0       1       1       0       0       2       main_column
+2       3       4       2       0       1       1       0       0       2       column1
+3       5       6       3       0       1       1       0       0       2       column2
+4       7       8       4       0       1       1       0       0       2       column3
+5       9       10      5       0       1       1       0       0       100     Y_pontoon_upper1
+6       11      12      6       0       1       1       0       0       100     Y_pontoon_upper2
+7       13      14      7       0       1       1       0       0       100     Y_pontoon_upper3
+8       15      16      8       0       5       1       0       0       4       Y_pontoon_lower1
+9       17      18      9       0       5       1       0       0       4       Y_pontoon_lower2
+10      19      20      10      0       5       1       0       0       4       Y_pontoon_lower3
 
 ----------------------------------------Strip Theory Coefficients----------------------------------------------------------
 HYDROMEMBERCOEFF
@@ -169,7 +169,7 @@ CoeffID CdN  CaN  CpN  MCFC
 
 HYDROMEMBERCOEFF_RECT
 CoeffID CdNx    CaNx    CpNx    CdNy    CaNy    CpNy    MCFC    CdAx*   f_c*    alpha*
-5       2.00 2.00 1.00 2.00 1.00 1.00 1 0.00 0.00 0.00
+5       2.00 2.00 1.00 2.00 2.00 1.00 1 0.00 0.00 0.00
 
 HYDROJOINTCOEFF
 CoeffID JointID CdA CaA CpA

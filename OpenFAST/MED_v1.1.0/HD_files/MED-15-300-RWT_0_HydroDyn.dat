@@ -56,7 +56,7 @@ False                  Echo        - Echo the input file data (flag)
            0.0            0.0            0.0            0.0            0.0            0.0
            0.0            0.0            0.0            0.0            0.0            0.0
 ---------------------- STRIP THEORY OPTIONS --------------------------------------
-0                      WaveDisp    - Method of computing Wave Kinematics {0: use undisplaced position, 1: use displaced position) } (switch)
+1                      WaveDisp    - Method of computing Wave Kinematics {0: use undisplaced position, 1: use displaced position) } (switch)
 0                      AMMod       - Method of computing distributed added-mass force. (0: Only and always on nodes below SWL at the undisplaced position. 2: Up to the instantaneous free surface) [overwrite to 0 when WaveMod = 0 or 6 or when WaveStMod = 0 in SeaState]
 1                      HstMod  - Method of computing hydrostatic loads. (0: Up to the still water level. 1: Up to the instantaneous free surface) [overwrite to 0 when WaveStMod = 0 in SeaState]
 ---------------------- AXIAL COEFFICIENTS --------------------------------------
@@ -145,16 +145,16 @@ MemberID    MemberCdA1     MemberCdA2    MemberCdAMG1   MemberCdAMG2    MemberCd
 10          NMembers    - Number of members (-)
 MemberID  MJointID1  MJointID2  MPropSetID1  MPropSetID2  MSecGeom  MSpinOrient  MDivSize  MCoefMod  MHstLMod  PropPot  !  [MCoefMod=1:  use  simple  coeff  table,  2:  use  depth-based  coeff  table,  3:  use  member-based  coeff  table]  [  PropPot/=0  if  member  is  modeled  with  potential-flow  theory]
 (-)          (-)        (-)        (-)          (-)       (switch)     (deg)        (m)    (switch)  (switch)  (flag)
-1             1         2          1            2            1            0         0.5       1         1       False
-2             3         4          3            4            1            0         0.5       1         1       False
-3             5         6          5            6            1            0         0.5       1         1       False
-4             7         8          7            8            1            0         0.5       1         1       False
-5             9         10         9            10           1            0         5.0       1         2       False
-6             11        12         11           12           1            0         5.0       1         2       False
-7             13        14         13           14           1            0         5.0       1         2       False
-8             15        16         15           16           2            0         0.5       1         2       False
-9             17        18         17           18           2            0         0.5       1         2       False
-10            19        20         19           20           2            0         0.5       1         2       False
+1             1         2          1            2            1            0         1.0       1         1       False
+2             3         4          3            4            1            0         1.0       1         1       False
+3             5         6          5            6            1            0         1.0       1         1       False
+4             7         8          7            8            1            0         1.0       1         1       False
+5             9         10         9            10           1            0         10.0       1         2       False
+6             11        12         11           12           1            0         10.0       1         2       False
+7             13        14         13           14           1            0         10.0       1         2       False
+8             15        16         15           16           2            0         2.0       1         2       False
+9             17        18         17           18           2            0         2.0       1         2       False
+10            19        20         19           20           2            0         2.0       1         2       False
 ---------------------- FILLED MEMBERS ------------------------------------------
 0           NFillGroups - Number of filled member groups (-) [If FillDens = DEFAULT, then FillDens = WtrDens; FillFSLoc is related to MSL2SWL]
  FillNumM    FillMList   FillFSLoc   FillDens  
