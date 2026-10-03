@@ -1,5 +1,5 @@
 ! Controller parameter input file for the WEIS Turbine wind turbine
-!    - File written using ROSCO version 2.9.4 controller tuning logic on 07/18/26
+!    - File written using ROSCO version 2.9.4 controller tuning logic on 09/15/26
 
 !------- SIMULATION CONTROL ------------------------------------------------------------
 0                   ! LoggingLevel		- {0: write no debug files, 1: write standard output .dbg-file, 2: LoggingLevel 1 + ROSCO LocalVars (.dbg2) 3: LoggingLevel 2 + complete avrSWAP-array (.dbg3)}
@@ -33,12 +33,12 @@
 0                   ! StC_Mode        - Structural control mode [0- unused, 1- User defined, 2- Open loop control]
 
 !------- FILTERS ----------------------------------------------------------
-2.26000             ! F_LPFCornerFreq	  - Corner frequency (-3dB point) in the low-pass filters, [rad/s]
+0.90000             ! F_LPFCornerFreq	  - Corner frequency (-3dB point) in the low-pass filters, [rad/s]
 0.00000             ! F_LPFDamping		  - Damping coefficient {used only when F_FilterType = 2} [-]
-1                   ! F_NumNotchFilts   - Number of notch filters placed on sensors
-2.5182              ! F_NotchFreqs      - Natural frequency of the notch filters. Array with length F_NumNotchFilts
-0.0000              ! F_NotchBetaNum    - Damping value of numerator (determines the width of notch). Array with length F_NumNotchFilts, [-]
-0.2500              ! F_NotchBetaDen    - Damping value of denominator (determines the depth of notch). Array with length F_NumNotchFilts, [-]
+2                   ! F_NumNotchFilts   - Number of notch filters placed on sensors
+2.63894  5.81195    ! F_NotchFreqs      - Natural frequency of the notch filters. Array with length F_NumNotchFilts
+0.0050   0.0100     ! F_NotchBetaNum    - Damping value of numerator (determines the width of notch). Array with length F_NumNotchFilts, [-]
+0.0500   0.1000     ! F_NotchBetaDen    - Damping value of denominator (determines the depth of notch). Array with length F_NumNotchFilts, [-]
 0                   ! F_GenSpdNotch_N   - Number of notch filters on generator speed
 0                   ! F_GenSpdNotch_Ind - Indices of notch filters on generator speed
 1                   ! F_TwrTopNotch_N   - Number of notch filters on tower top acceleration signal
@@ -66,7 +66,7 @@
 0.105000000000      ! PC_Switch			- Angle above lowest minimum pitch angle for switch, [rad]
 
 !------- INDIVIDUAL PITCH CONTROL -----------------------------------------
-7.309937  9.137422  ! IPC_Vramp		- Start and end wind speeds for cut-in ramp function. First entry: IPC inactive, second entry: IPC fully active. [m/s]
+7.309937  9.137421  ! IPC_Vramp		- Start and end wind speeds for cut-in ramp function. First entry: IPC inactive, second entry: IPC fully active. [m/s]
 2                   ! IPC_SatMode		- IPC Saturation method (0 - no saturation (except by PC_MinPit), 1 - saturate by PS_BldPitchMin, 2 - saturate sotfly (full IPC cycle) by PC_MinPit, 3 - saturate softly by PS_BldPitchMin)
 0.3                 ! IPC_IntSat		- Integrator saturation (maximum signal amplitude contribution to pitch from IPC), [rad]
 0.000e+00 0.000e+00 ! IPC_KP			- Proportional gain for the individual pitch controller: first parameter for 1P reductions, second for 2P reductions, [-]
@@ -78,7 +78,7 @@
 95.10000000000      ! VS_GenEff			- Generator efficiency mechanical power -> electrical power, [should match the efficiency defined in the generator properties!], [%]
 25996270.20000      ! VS_ArSatTq		- Above rated generator torque PI control saturation, [Nm]
 4500000.000000      ! VS_MaxRat			- Maximum torque rate (in absolute value) in torque controller, [Nm/s].
-28809415.18449      ! VS_MaxTq			- Maximum generator torque in Region 3 (HSS side), [Nm].
+28809416.70189      ! VS_MaxTq			- Maximum generator torque in Region 3 (HSS side), [Nm].
 0.000000000000      ! VS_MinTq			- Minimum generator torque (HSS side), [Nm].
 0.193310000000      ! VS_MinOMSpd		- Minimum generator speed [rad/s]
 112510064.71741      ! VS_Rgn2K		- Generator torque constant in Region 2 (HSS side). Only used in VS_ControlMode = 1,3
@@ -86,8 +86,8 @@
 25996270.20000      ! VS_RtTq			- Rated torque, [Nm].
 0.607370000000      ! VS_RefSpd			- Rated generator speed [rad/s]
 1                   ! VS_n				- Number of generator PI torque controller gains
--110921677.78481      ! VS_KP				- Proportional gain for generator PI torque controller [-]. (Only used in the transitional 2.5 region if VS_ControlMode =/ 2)
--12401638.66618      ! VS_KI				- Integral gain for generator PI torque controller [s]. (Only used in the transitional 2.5 region if VS_ControlMode =/ 2)
+-110921681.16677      ! VS_KP				- Proportional gain for generator PI torque controller [-]. (Only used in the transitional 2.5 region if VS_ControlMode =/ 2)
+-12401638.66689      ! VS_KI				- Integral gain for generator PI torque controller [s]. (Only used in the transitional 2.5 region if VS_ControlMode =/ 2)
 10.15               ! VS_TSRopt		    - Power-maximizing region 2 tip-speed-ratio. Only used in VS_ControlMode = 2.
 0.314000000000      ! VS_PwrFiltF		- Low pass filter on power used to determine generator speed set point.  Only used in VS_ControlMode = 3.
 
@@ -107,13 +107,13 @@
 0.0                 ! WE_CP - Parameters that define the parameterized CP(lambda) function
 0.0          		  ! WE_Gamma			- Adaption gain of the wind speed estimator algorithm [m/rad]
 1.0                 ! WE_GearboxRatio	- Gearbox ratio [>=1],  [-]
-861224907.37361     ! WE_Jtot			- Total drivetrain inertia, including blades, hub and casted generator inertia to LSS, [kg m^2]
+861224907.42326     ! WE_Jtot			- Total drivetrain inertia, including blades, hub and casted generator inertia to LSS, [kg m^2]
 1.225               ! WE_RhoAir			- Air density, [kg m^-3]
-"MED-15-300-RWT_0_Cp_Ct_Cq.txt"      ! PerfFileName      - File containing rotor performance tables (Cp,Ct,Cq) (absolute path or relative to this file)
-30      30          ! PerfTableSize     - Size of rotor performance tables, first number refers to number of blade pitch angles, second number referse to number of tip-speed ratios
+"MED-15-300-RWT_v1.1.0_Cp_Ct_Cq.txt"      ! PerfFileName      - File containing rotor performance tables (Cp,Ct,Cq) (absolute path or relative to this file)
+10      10          ! PerfTableSize     - Size of rotor performance tables, first number refers to number of blade pitch angles, second number referse to number of tip-speed ratios
 60                  ! WE_FOPoles_N      - Number of first-order system poles used in EKF
 3.0000 3.2116 3.4233 3.6349 3.8465 4.0582 4.2698 4.4814 4.6931 4.9047 5.1164 5.3280 5.5396 5.7513 5.9629 6.1745 6.3862 6.5978 6.8094 7.0211 7.2327 7.4443 7.6560 7.8676 8.0792 8.2909 8.5025 8.7142 8.9258 9.1374 9.6662 10.1949 10.7237 11.2524 11.7812 12.3099 12.8387 13.3674 13.8962 14.4249 14.9537 15.4825 16.0112 16.5400 17.0687 17.5975 18.1262 18.6550 19.1837 19.7125 20.2412 20.7700 21.2987 21.8275 22.3562 22.8850 23.4137 23.9425 24.4712 25.0000               ! WE_FOPoles_v      - Wind speeds corresponding to first-order system poles [m/s]
--0.02527668 -0.02705983 -0.02884297 -0.03062612 -0.03240926 -0.03419241 -0.03597555 -0.03775870 -0.03954184 -0.04132499 -0.04310813 -0.04489128 -0.04667442 -0.04845757 -0.05024071 -0.05202386 -0.05380701 -0.05559015 -0.05737330 -0.05915644 -0.06093959 -0.06272273 -0.06450588 -0.06628902 -0.06807217 -0.06985531 -0.07163846 -0.07342160 -0.07520475 -0.07642084 -0.03359271 -0.04018644 -0.04710923 -0.05648175 -0.06809449 -0.07868820 -0.08980023 -0.10201480 -0.11524971 -0.12946496 -0.14249687 -0.15586046 -0.17010441 -0.18527469 -0.20139521 -0.21848808 -0.23455972 -0.25079336 -0.26758412 -0.28494221 -0.30290046 -0.32149952 -0.34072749 -0.35805315 -0.37557447 -0.39325475 -0.41115676 -0.42937775 -0.44804529 -0.46731403               ! WE_FOPoles        - First order system poles [1/s]
+-0.02527668 -0.02705983 -0.02884297 -0.03062612 -0.03240926 -0.03419241 -0.03597555 -0.03775870 -0.03954184 -0.04132499 -0.04310813 -0.04489128 -0.04667442 -0.04845757 -0.05024071 -0.05202386 -0.05380700 -0.05559015 -0.05737329 -0.05915644 -0.06093958 -0.06272273 -0.06450587 -0.06628902 -0.06807216 -0.06985531 -0.07163846 -0.07342160 -0.07520475 -0.07642083 -0.03359271 -0.04018644 -0.04710923 -0.05648175 -0.06809449 -0.07868820 -0.08980023 -0.10201480 -0.11524971 -0.12946496 -0.14249688 -0.15586046 -0.17010442 -0.18527470 -0.20139523 -0.21848809 -0.23455973 -0.25079337 -0.26758413 -0.28494222 -0.30290048 -0.32149954 -0.34072750 -0.35805317 -0.37557449 -0.39325477 -0.41115678 -0.42937777 -0.44804531 -0.46731405               ! WE_FOPoles        - First order system poles [1/s]
 
 !------- YAW CONTROL ------------------------------------------------------
 0.00000             ! Y_uSwitch		- Wind speed to switch between Y_ErrThresh. If zero, only the second value of Y_ErrThresh is used [m/s]
