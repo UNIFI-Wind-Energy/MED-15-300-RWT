@@ -110,9 +110,9 @@ True                   FLookup     - Flag to indicate whether a lookup for f' wi
 "Airfoils/MED-15-300-RWT_0_AeroDyn_Polar_100.dat"
 ======  Rotor/Blade Properties  =====================================================================
 True                   UseBlCm     - Include aerodynamic pitching moment in calculations?  (flag)
-"MED-15-300-RWT_0_AeroDyn_blade_50.dat" ADBlFile(1) - Name of file containing distributed aerodynamic properties for Blade #1 (-)
-"MED-15-300-RWT_0_AeroDyn_blade_50.dat" ADBlFile(2) - Name of file containing distributed aerodynamic properties for Blade #2 (-) [unused if NumBl < 2]
-"MED-15-300-RWT_0_AeroDyn_blade_50.dat" ADBlFile(3) - Name of file containing distributed aerodynamic properties for Blade #3 (-) [unused if NumBl < 3]
+"MED-15-300-RWT_0_AeroDyn_blade.dat" ADBlFile(1) - Name of file containing distributed aerodynamic properties for Blade #1 (-)
+"MED-15-300-RWT_0_AeroDyn_blade.dat" ADBlFile(2) - Name of file containing distributed aerodynamic properties for Blade #2 (-) [unused if NumBl < 2]
+"MED-15-300-RWT_0_AeroDyn_blade.dat" ADBlFile(3) - Name of file containing distributed aerodynamic properties for Blade #3 (-) [unused if NumBl < 3]
 ======  Hub Properties ============================================================================== [used only when Buoyancy=True]
 0                      VolHub      - Hub volume (m^3)
 0                      HubCenBx    - Hub center of buoyancy x direction offset (m)

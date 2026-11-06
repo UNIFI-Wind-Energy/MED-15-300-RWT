@@ -32,19 +32,19 @@ X[m] Y[m] Z[m]
 
 REF_COG_POS               - cog reference position, at which the mass matrix is evaluated
 X[m] Y[m] Z[m]
-1.0198783834071446e-06 0.0 -13.699814674840056
+1.037026782462246e-06 0.0 -13.087363270389085
 
 REF_HYDRO_POS             - position of the TP center of mass defined in (x,y,z) [m] from the origin (0,0,0), which is also the neutral point in case of a floating substructure
 X[m] Y[m] Z[m]
 0.0 0.0 0.0
 
 SUB_MASS                  - the floater mass matrix is defined at the REF_COG_POS
-1.67829e+07 0.00000e+00 0.00000e+00 0.00000e+00 0.00000e+00 0.00000e+00
-0.00000e+00 1.67829e+07 0.00000e+00 0.00000e+00 0.00000e+00 0.00000e+00
-0.00000e+00 0.00000e+00 1.67829e+07 0.00000e+00 0.00000e+00 0.00000e+00
-0.00000e+00 0.00000e+00 0.00000e+00 1.65471e+10 0.00000e+00 0.00000e+00
-0.00000e+00 0.00000e+00 0.00000e+00 0.00000e+00 1.65471e+10 0.00000e+00
-0.00000e+00 0.00000e+00 0.00000e+00 0.00000e+00 0.00000e+00 3.11540e+10
+1.64583e+07 0.00000e+00 0.00000e+00 0.00000e+00 0.00000e+00 0.00000e+00
+0.00000e+00 1.64583e+07 0.00000e+00 0.00000e+00 0.00000e+00 0.00000e+00
+0.00000e+00 0.00000e+00 1.64583e+07 0.00000e+00 0.00000e+00 0.00000e+00
+0.00000e+00 0.00000e+00 0.00000e+00 1.71490e+10 0.00000e+00 0.00000e+00
+0.00000e+00 0.00000e+00 0.00000e+00 0.00000e+00 1.71449e+10 0.00000e+00
+0.00000e+00 0.00000e+00 0.00000e+00 0.00000e+00 0.00000e+00 3.20621e+10
 
 SUB_HYDROADDEDMASS        - the hydrodynamic added mass is defined and applied at the REF_HYDRO_POS 
 K(0,0)[N/m] K(1,1)[N/m] K(2,2)[N/m] K(3,3)[Nm/rad] K(4,4)[Nm/rad] K(4,4)[Nm/rad]
